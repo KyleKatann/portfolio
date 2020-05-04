@@ -3,33 +3,73 @@
 <head>
 <meta charset="utf-8">
 <title>kyle's portfolio</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.fullpage.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 <script src="js/circletext.js"></script>
 <script src="js/circletext2.js"></script>
 </head>
 
 <body>
-  <img class="selficon" src="img/selficon.png">
 
-  <div class="circle">
+  <header>
+    <img class="selficon" src="img/selficon.png">
+    <div class="circle">
+      <div class="circTxt">
+        <script type="text/javascript">circularText(" The world is made of  「ヨシッ！」 ", 240, 0);</script>
+      </div>
+      
+      <div class="circTxt2">
+        <script type="text/javascript">circularText2("   profile     program   achievement     LEGO    ", 190, 0);</script>
+      </div>
 
-    <div class="circTxt">
-      <script type="text/javascript">circularText(" The world is made of  「ヨシッ！」 ", 240, 0);</script>
+      <div class="circleupper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      <div class="circlelower">
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
     </div>
-    
-    <div class="circTxt2">
-      <script type="text/javascript">circularText2("   profile     program   achievement     LEGO    ", 190, 0);</script>
-    </div>
+  </header>
 
-    <div class="circleupper">
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-    </div>
-    <div class="circlelower">
-      <div class="circle3"></div>
-      <div class="circle4"></div>
-    </div>
+
+
+  <ul id="menu">
+    <li data-menuanchor="1page" class="active"><a href="#1page">First slide</a></li>
+    <li data-menuanchor="2page"><a href="#2page">Second slide</a></li>
+    <li data-menuanchor="3page"><a href="#3page">Third slide</a></li>
+    <li data-menuanchor="4page"><a href="#4page">Fourth slide</a></li>
+  </ul>
+  <div id="fullpage">
+    <div class="section">Some section</div>
+    <div class="section">
+    <div class="slide"> Slide 1 </div>
+    <div class="slide"> Slide 2 </div>
+    <div class="slide"> Slide 3 </div>
+    <div class="slide"> Slide 4 </div>
   </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+  </div>
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.fullpage.min.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+    anchors: ['1page', '2page', '3page','4page'],
+    menu: '#menu',
+    sectionsColor: ['#AACF52', '#4BBFC3', '#7BAABE', '#E5E5E5']
+    });
+    });
+  </script>
 
 
 </body>
