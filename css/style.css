@@ -18,6 +18,7 @@ header{
 
 
 .selficon{
+    z-index: 9999;
     position: absolute;
     top: 100px;
     left: 50%;
@@ -48,30 +49,74 @@ header{
 
 
 .circle1 {
+    position:relative;
     width:200px;
     height:200px;
     border-radius:200px 0px 0px 0px;
     background:#E65032;
-
 }
+.circle1-clear {
+    z-index: 9998; /* 猫の一個下、 .circTxt2の一個上 */
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:200px 0px 0px 0px;
+}
+
 .circle2 {
+    position:relative;
     width:200px;
     height:200px;
     border-radius:0px 200px 0px 0px;
     background:#53B09A;
 }
+.circle2-clear {
+    z-index: 9998; /* 猫の一個下、 .circTxt2の一個上 */
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:0px 200px 0px 0px;
+}
+
 .circle3 {
+    position:relative;
     width:200px;
     height:200px;
     border-radius:0px 0px 0px 200px;
     background:#FF9F40;
 }
+.circle3-clear {
+    z-index: 9998; /* 猫の一個下、 .circTxt2の一個上 */
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:0px 0px 0px 200px;
+}
+
 .circle4 {
+    position:relative;
     width:200px;
     height:200px;
     border-radius:0px 0px 200px 0px;
     background:#FFCC66;
 }
+.circle4-clear {
+    z-index: 9998; /* 猫の一個下、 .circTxt2の一個上 */
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:0px 0px 200px 0px;
+}
+
+.Link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .circTxt {
     /*allows for centering*/
@@ -83,20 +128,24 @@ header{
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     /*adjust as needed*/
+    font-family: 'arial black';
     font-size: x-large;
-    color: white;
+    font-weight: 900;
+    color: #ffd700;
     text-shadow:-3px -3px 1px #000000, 3px 3px 5px #000000;
 }
 .circTxt2 {
+    z-index: 9997; /*透明なボタンの下*/
     /*allows for centering*/
     position: absolute;
-    top: 34px;
+    top: 35px;
 
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     /*adjust as needed*/
+    font-family: 'OCRB';
     font-size: x-large;
     color: black;
 }

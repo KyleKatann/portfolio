@@ -19,28 +19,46 @@
       </div>
       
       <div class="circTxt2">
-        <script type="text/javascript">circularText2("   profile     program   achievement     LEGO    ", 190, 0);</script>
+        <script type="text/javascript">circularText2("   PROFILE     PROGRAM   ACHIVEMENT     LEGO    ", 190, 0);</script>
       </div>
 
       <div class="circleupper">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
+        <div class="circle1">
+          <div class="circle1-clear">
+            <a class ="Link" href="#LEGO">  </a>
+          </div>
+        </div>
+        <div class="circle2">
+          <div class="circle2-clear">
+            <a class ="Link" href="#PROFILE">  </a>
+          </div>
+        </div>
       </div>
       <div class="circlelower">
-        <div class="circle3"></div>
-        <div class="circle4"></div>
+        <div class="circle3">
+          <div class="circle3-clear">
+            <a class ="Link" href="#ACHIVEMENT">  </a>
+          </div>
+        </div>
+        <div class="circle4">
+          <div class="circle4-clear">
+            <a class ="Link" href="#PROGRAM">  </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
 
 
+<!--  
   <ul id="menu">
     <li data-menuanchor="1page" class="active"><a href="#1page">First slide</a></li>
     <li data-menuanchor="2page"><a href="#2page">Second slide</a></li>
     <li data-menuanchor="3page"><a href="#3page">Third slide</a></li>
     <li data-menuanchor="4page"><a href="#4page">Fourth slide</a></li>
   </ul>
+-->
   <div id="fullpage">
     <div class="section">Some section</div>
     <div class="section">
@@ -64,7 +82,7 @@
   <script>
     $(document).ready(function() {
     $('#fullpage').fullpage({
-    anchors: ['1page', '2page', '3page','4page'],
+    anchors: ['LEGO', 'PROFILE', 'ACHIVEMENT','PROGRAM'],
     menu: '#menu',
     sectionsColor: ['#AACF52', '#4BBFC3', '#7BAABE', '#E5E5E5']
     });
