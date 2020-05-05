@@ -13,24 +13,25 @@
 
   <header>
     <img class="selficon" src="img/selficon.png">
-    <div class="circle">
+
+    <section class="circle">
       <div class="circTxt">
         <script type="text/javascript">circularText(" The world is made of  「ヨシッ！」 ", 240, 0);</script>
       </div>
       
       <div class="circTxt2">
-        <script type="text/javascript">circularText2("   PROFILE     PROGRAM   ACHIVEMENT     LEGO    ", 190, 0);</script>
+        <script type="text/javascript">circularText2("     LEGO      PROGRAM    ACHIVEMENT   PROFILE   ", 190, 0);</script>
       </div>
 
       <div class="circleupper">
         <div class="circle1">
           <div class="circle1-clear">
-            <a class ="Link" href="#LEGO">  </a>
+            <a class ="Link" href="#PROFILE">  </a>
           </div>
         </div>
         <div class="circle2">
           <div class="circle2-clear">
-            <a class ="Link" href="#PROFILE">  </a>
+            <a class ="Link" href="#LEGO">  </a>
           </div>
         </div>
       </div>
@@ -46,31 +47,47 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </header>
 
 
 
-  <div id="fullpage">
+  <section id="fullpage">
     <!--レゴ-->
     <div class="section">
-      <div class="slide"> Slide 1 </div>
-      <div class="slide"> Slide 2 </div>
-      <div class="slide"> Slide 3 </div>
-      <div class="slide"> Slide 4 </div>
+      <h1>PROFILE</h1>
     </div>
     <!--自己紹介-->
-    <div class="section">Some section</div>
-    <!--プログラム-->
-    <div class="section">Some section</div>
+    <div class="section">
+      <div class="slide">
+        <h1>遊星号+不動遊星</h1>
+        <img src="img/LEGO/1.jpg">
+        <h2>遊戯王5D'sより遊星号+不動遊星、思いの外反響があり作画監督に認知されるまでに至った。(右のスライド)</h2>        
+      </div>
+
+      <div class="slide">
+        <h1>リツイート数+作画監督のコメント</h1>
+        <img src="img/LEGO/2.jpg">
+        <img src="img/LEGO/3.jpg">
+      </div>
+      <div class="slide"> Slide 3 </div>
+      <div class="slide"> Slide 4 </div>
+
+    </div>
+
     <!--アチーブメント-->
+    <div class="section">
+      <h1>このページは就職するまで秘密です。</h1>
+    </div>
+
+    <!--プログラム-->
     <div class="section">
       <div class="slide"> Slide 1 </div>
       <div class="slide"> Slide 2 </div>
       <div class="slide"> Slide 3 </div>
       <div class="slide"> Slide 4 </div>
     </div>
-  </div>
+  </section>
 
 
 
@@ -81,9 +98,9 @@
   <script>
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        anchors: ['LEGO', 'PROFILE', 'ACHIVEMENT','PROGRAM'],
+        anchors: ['PROFILE','LEGO','ACHIVEMENT','PROGRAM'],
         menu: '#menu',
-        sectionsColor: ['#E65032', '#53B09A', '#FF9F40', '#FFCC66']
+        sectionsColor: ['#53B09A','#E65032', '#FF9F40', '#FFCC66']
       });
     });
   </script>

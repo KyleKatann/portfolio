@@ -1,21 +1,27 @@
-
+    
 body {
     background-color: #000000;
 }
 
 header{
 /*    width: 100%; */
-    z-index: 9999;
+    z-index: 1000;
     position: fixed;
     top: 0px;
 /*    left: 50px;  */
     background: url(../img/bg.jpg) center / cover; 
-    border-radius: 0 0 50% 0;
+    border-radius: 0 0 50% 50%;
 
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.29);
 
 }
 
+#fullpage .slide{
+    text-align: center;
+}
+#fullpage .section{
+    text-align: center;
+}
 
 .selficon{
     z-index: 9999;
@@ -53,7 +59,7 @@ header{
     width:200px;
     height:200px;
     border-radius:200px 0px 0px 0px;
-    background:#E65032;
+    background:#53B09A;
 }
 .circle1-clear {
     z-index: 9998; /* 猫の一個下、 .circTxt2の一個上 */
@@ -68,7 +74,7 @@ header{
     width:200px;
     height:200px;
     border-radius:0px 200px 0px 0px;
-    background:#53B09A;
+    background:#E65032;
 }
 .circle2-clear {
     z-index: 9998; /* 猫の一個下、 .circTxt2の一個上 */
@@ -138,7 +144,6 @@ header{
     /*allows for centering*/
     position: absolute;
     top: 35px;
-
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
