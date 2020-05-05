@@ -23,6 +23,11 @@ header{
     text-align: center;
 }
 
+
+.artworks{
+    box-shadow: 4px 4px 4px;
+}
+
 .selficon{
     z-index: 9999;
     position: absolute;
