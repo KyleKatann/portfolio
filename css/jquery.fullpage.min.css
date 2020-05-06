@@ -6,7 +6,7 @@
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
 .fp-enabled body,html.fp-enabled{
-    margin:0;
+    margin:75px 0px 0px 0px;
     padding:0;
     overflow:hidden;
     -webkit-tap-highlight-color:rgba(0,0,0,0)}
