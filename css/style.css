@@ -9,9 +9,6 @@ header{
     top: 0px;
 /*    left: 50px;  */
     z-index: 1000;
-    background: url(../img/bg.jpg) center / cover; 
-    border-radius: 0 0 50% 50%;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.29);
 
 }
 
@@ -24,9 +21,6 @@ header{
 }
 
 
-.artworks{
-    box-shadow: 4px 4px 4px;
-}
 
 .selficon{
     z-index: 9999;
@@ -43,19 +37,46 @@ header{
 }
 
 .struct-header{
+    /*これをheaderに移すとうまくいかない*/
     flex-direction: row;
     display:flex;
+    border-radius: 0 0 50% 50%;
 }
 
 .headerline{
-    display:inline-flex;
+    height: 130px;
+    width: 800px;
+    border-radius:0px 0px 10px 0px;
+    background: url(../img/header.jpg) center / cover; 
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 1px 1px 0 #ffffff,-1px 1px 0 #ffffff,1px -1px 0 #ffffff,-1px -1px 0 #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.29);
+
+	-webkit-animation:blink 5s ease-in-out infinite alternate;
+    -moz-animation:blink 5s ease-in-out infinite alternate;
+    animation:blink 5s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-moz-keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
 }
 .circle{
     justify-content: center;
     flex-direction: column;
     display:flex;
-    margin: 50px 50px 50px 50px;
-
+    padding: 50px 50px 50px 50px;
+    background: url(../img/bg.jpg) center / cover; 
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.29);
 
 }
 .circleupper{
@@ -68,7 +89,6 @@ header{
     flex-direction: row;
     display:inline-flex;
 }
-
 
 .circle1 {
     position:relative;
@@ -168,4 +188,9 @@ header{
     font-family: 'OCRB';
     font-size: x-large;
     color: black;
+}
+
+
+.artworks{
+    box-shadow: 4px 4px 4px;
 }
