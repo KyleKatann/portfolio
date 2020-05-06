@@ -59,7 +59,8 @@
       </section>
 
       <section class="headerline">
-        <img class="headerlineimg" src="img/header.png">
+        <img class="headerlineimgup" src="img/headerup.png">
+        <img class="headerlineimgdown" src="img/headerdown.png">
       </section>
     </section>
 
@@ -71,7 +72,7 @@
     <!--自己紹介-->
     <div class="section">
       <h1>PROFILE</h1>
-      <img src="img/self.png">
+      <img class="self" src="img/self.png">
       <p>
         大学：都内の国立大<br>
         専攻：ビジネスにおける数理最適化<br>
@@ -251,7 +252,7 @@
         <a href="img/PROGRAMS/1.jpg" data-lightbox="group"><img class="programs" src="img/PROGRAMS/1.jpg"></a>
         <p>
           実装言語：html・css・javascript<br>
-          プラグラインとしてfullpages.jsを使用した。左上の円形ボタンはcssの曲芸技で実現した。<br>
+          プラグインとしてfullpages.jsを使用した。左上の円形ボタンはcssの曲芸技で実現した。<br>
           github:<a href="https://github.com/KyleKatann/portfolio">https://github.com/KyleKatann/portfolio</a>
         </p>
       </div>
@@ -263,7 +264,8 @@
         <a href="img/PROGRAMS/2.jpg" data-lightbox="group"><img class="programs" src="img/PROGRAMS/2.jpg"></a>
         <p>
           実装言語：python・高速数理最適化線形／整数計画ソルバーであるgurobiかmypulp<br>
-          pip install oneDpackでインストール可能、一次元binpacking問題を解くことが可能。packing関数の第一引数にbinの大きさを、第二引数にitemのiterbleを入れる。<br>
+          pip install oneDpackでインストール可能、一次元binpacking問題を解くことが可能。<br>
+          packing関数の第一引数にbinの大きさを、第二引数にitemのiterbleを入れる。<br>
           oneDpack.packingは問題を最短路問題に帰結し、binの大きさが小さい時に高速に解ける。<br>
           oneDpack.packingCGは列生成法を使用し、itemの数が少ない時に高速に解ける。<br>
           github:<a href="https://github.com/KyleKatann/oneDpack">https://github.com/KyleKatann/oneDpack</a>
@@ -278,7 +280,8 @@
         <a href="img/PROGRAMS/4.jpg" data-lightbox="group"><img class="programs" src="img/PROGRAMS/4.jpg"></a>
         <p>
           実装言語：python・高速数理最適化線形／整数計画ソルバーであるgurobi<br>
-          倉庫内のピッキングTSP問題が解ける。倉庫内を35点のnodeで表現し、15番から出発し、ABCD...と名のついた商品を最短路でピッキングして、15番に帰ってくるルートを表示する。<br>
+          35点のnodeで表現された倉庫内のピッキングTSP問題が解ける。<br>
+          具体的に、15番から出発し、ABCD...と名のついた商品を最短路でピッキングして、15番に帰ってくるルートを表示する。<br>
           倉庫内の表現はwarehouse_node.xlsxで規定、ABCD...がどこにあるかはwhere_is_inventry.xlsxで規定する。中間計算結果としてwarehouse_root.xlsx、queryとしてquery.xlsxを自動生成する。<br>
           warehouse_node.xlsxさえ改変すれば現実の倉庫にも対応できる。<br>
           github:<a href="https://github.com/KyleKatann/imagine_warehouse">https://github.com/KyleKatann/imagine_warehouse</a>

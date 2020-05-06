@@ -37,6 +37,9 @@ header{
     width:  140px;       /* ※縦横を同値に */
     height: 140px;       /* ※縦横を同値に */
 }
+.self{
+    border-radius: 10%;  /* 角丸半径を50%にする(=円形にする) */
+}
 
 .struct-header{
     /*これをheaderに移すとうまくいかない*/
@@ -54,10 +57,38 @@ header{
     text-shadow: 1px 1px 0 #ffffff,-1px 1px 0 #ffffff,1px -1px 0 #ffffff,-1px -1px 0 #ffffff;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.29);
 }
-.headerlineimg{
+.headerlineimgup{
     max-height: 100%;
     max-width: 100%;
+    display: block;
+    margin: auto;
 }
+
+
+/*点滅*/
+.headerlineimgdown{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
 
 .circle{
     justify-content: center;
