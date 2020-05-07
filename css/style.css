@@ -39,6 +39,8 @@ header{
 }
 .self{
     border-radius: 10%;  /* 角丸半径を50%にする(=円形にする) */
+    width: 100px;
+    height: 100px;
 }
 
 .struct-header{
