@@ -52,7 +52,6 @@ header{
 .headerline{
     height: 150px;
     width: 100%;
-    border-radius:0px 0px 10px 0px;
     background: url(../img/header-bg.jpg) center / cover; 
     font-size: x-large;
     text-align: center;
